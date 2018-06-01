@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
     if(argc != 2) {
         fprintf(stderr, "Usage: sbopenurl url\n");
     }
-    CFURLRef cu = CFURLCreateWithBytes(NULL, argv[1], strlen(argv[1]), kCFStringEncodingUTF8, NULL);
+    CFURLRef cu = CFURLCreateWithBytes(NULL, (const UInt8 *)argv[1], strlen(argv[1]), kCFStringEncodingUTF8, NULL);
     if(!cu) {
         fprintf(stderr, "invalid URL\n");
         return 1;

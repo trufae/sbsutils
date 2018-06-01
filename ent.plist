@@ -1,2 +1,6 @@
-<dict><key>com.apple.springboard.debugapplications</key><true/><key>com.apple.springboard.opensensitiveurl</key><true/></dict>
+<dict>
+<key>platform-application</key><true/>
+<key>com.apple.springboard.debugapplications</key><true/>
+<key>com.apple.springboard.opensensitiveurl</key><true/>
+</dict>
 

@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ 
+        _SBSCopyPublicURLSchemes,
+        _SBSCopyApplicationDisplayIdentifiers,
+        _SBSProcessIDForDisplayIdentifier,
+        _SBSLaunchApplicationWithIdentifier,
+        _SBSLaunchApplicationForDebugging,
+        _SBSOpenSensitiveURLAndUnlock,
+        _SBSCopyPublicURLSchemes
+    ]
+    objc-classes:    [ ]
+    objc-ivars:      [ ]
+...
